@@ -16,21 +16,19 @@ const Navigation = () => {
           <a href="#marketplace" className="text-foreground hover:text-primary transition-smooth">
             Marketplace
           </a>
-          <a href="#artisans" className="text-foreground hover:text-primary transition-smooth">
-            For Artisans
-          </a>
           <a href="#about" className="text-foreground hover:text-primary transition-smooth">
             About
+          </a>
+          <a href="#join" className="text-foreground hover:text-primary transition-smooth">
+            Join as Artisan
           </a>
         </div>
         
         <div className="flex items-center space-x-2">
-          <Button variant="ghost" size="sm">
-            <User className="h-4 w-4 mr-2" />
+          <Button variant="outline" size="sm">
             Sign In
           </Button>
-          <Button variant="default" size="sm" className="bg-gradient-primary hover:shadow-warm transition-all">
-            <ShoppingBag className="h-4 w-4 mr-2" />
+          <Button variant="default" size="sm">
             Join as Artisan
           </Button>
         </div>

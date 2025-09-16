@@ -79,28 +79,15 @@ const MarketplacePreview = () => {
                 <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">
                   {product.title}
                 </h3>
+                <p className="text-muted-foreground text-sm mb-2">{product.category}</p>
+                <p className="text-sm text-muted-foreground mb-2">⭐ {product.rating} • {product.location}</p>
                 
-                <div className="flex items-center space-x-2 mb-3">
-                  <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm font-medium">{product.rating}</span>
-                  </div>
-                  <div className="flex items-center space-x-1 text-muted-foreground">
-                    <MapPin className="h-4 w-4" />
-                    <span className="text-sm">{product.location}</span>
-                  </div>
-                </div>
-                
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                <p className="text-muted-foreground text-sm mb-4">
                   By {product.artisan} • {product.story}
                 </p>
                 
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-primary">{product.price}</span>
-                  <Button size="sm" variant="outline" className="hover:bg-primary hover:text-primary-foreground">
-                    View Details
-                  </Button>
-                </div>
+                <p className="text-lg font-bold text-primary mb-4">{product.price}</p>
+                <Button className="w-full">View Details</Button>
               </CardContent>
             </Card>
           ))}

@@ -35,13 +35,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-            <Button size="lg" className="bg-gradient-primary hover:shadow-warm transition-all text-lg px-8 py-6">
-              <Heart className="h-5 w-5 mr-2" />
+            <Button size="lg" variant="hero" className="text-lg px-8 py-6">
               Browse Crafts
-              <ArrowRight className="h-5 w-5 ml-2" />
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6">
-              <Globe className="h-5 w-5 mr-2" />
+            <Button size="lg" variant="craft" className="text-lg px-8 py-6">
               Sell Your Craft
             </Button>
           </div>
